@@ -1,0 +1,274 @@
+* {
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
+
+.primary-color {
+    color: #000000;
+}
+
+.secondary-color {
+    color: #FFFFFF;
+}
+
+.three-color {
+    color: #454545;
+}
+
+header {
+    width: 100%;
+    height: 70vh;
+    background-image: url('/img/banner-min.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.45rem;
+}
+
+header p {
+    font-size: 1.25rem;
+}
+
+header .btn {
+    width: 8rem;
+    border-radius: 0;
+}
+
+/* NAVBAR */
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+#navbar {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.navbar-brand img {
+    width: 75px;
+}
+
+.navbar-brand span {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+ul li a {
+    font-size: 1.2rem;
+}
+
+@media(min-width: 768px) {
+    header h1 {
+        font-size: 3.3rem;
+    }
+}
+
+/* MINI BANNERS */
+#mini-banners h1 {
+    margin: 3.2rem 0;
+}
+
+#mini-banners .card {
+    width: 16rem;
+    margin: 10px auto;
+    border-radius: 0;
+}
+
+#mini-banners img {
+    margin: auto;
+    height: 64px;
+    width: 64px;
+}
+
+#mini-banners .btn {
+    border-radius: 0;
+}
+
+@media(min-width: 768px) {
+   #mini-banners {
+      margin: auto;
+   }
+
+   #mini-banners .card {
+      width: 18rem;
+   }
+}
+
+/* QUEM SOMOS */
+#quemSomos {
+    display: flex;
+    flex-direction: column;
+}
+
+#quemSomos img {
+    width: auto;
+    height: 576px;
+}
+
+#quemSomos p {
+    font-size: 1.2rem;
+}
+
+@media(min-width: 768px) {
+    #quemSomos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #quemSomos img {
+        width: 450px;
+        height: 576px;
+        margin-right: 25px;
+        box-shadow: 10px 10px 0px 4px rgba(0,0,0,0.99);
+        -webkit-box-shadow: 10px 10px 0px 4px rgba(0,0,0,0.99);
+        -moz-box-shadow: 10px 10px 0px 4px rgba(0,0,0,0.99);
+    }
+    
+    #quemSomos p {
+        font-size: 1.4rem;
+    }
+}
+
+/* CORTES */
+#imagens-cortes .col-md-4 {
+    position: relative;
+    cursor: pointer;
+}
+
+#imagens-cortes .col-md-4:hover > .banner-content {
+    opacity: 0.8;
+}
+
+#imagens-cortes .banner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.botao-port {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-port {
+    border-radius: 0;
+}
+
+@media(min-width: 768px) {
+    #imagens-cortes .banner-content {
+        opacity: 0;
+    }
+}
+
+/* Contato */
+#contato {
+    width: 100%;
+    height: 50vh;
+    margin: 15px 0;
+    background-image: url("/img/contato-min.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#contato .filter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    color: #000000;
+}
+
+#contato .btn {
+    border-radius: 0;
+}
+
+/* FOOTER */
+#footer {
+    padding: 3em 2em;
+}
+
+#footer-top .row {
+    border-bottom: 1px solid #FFF;
+    justify-content: center;
+}
+
+#footer-top img {
+    width: 75px;
+}
+
+#footer-top span {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* FOOTER DETAILS */
+#footer-details {
+    margin-top: 2rem;
+}
+
+#icons-sociais ul {
+   margin: 15px 0;
+}
+
+ #icons-sociais li {
+    display: flex;
+ }
+
+ #icons-sociais p {
+    margin-left: 5px;
+ }
+
+ #link-site a {
+    text-decoration: none;
+    color: #FFF;
+ }
+
+ /* FOOTER BOTTOM */
+ #footer-bottom {
+    border-top: 1px solid #FFF;
+ }
+
+ @media(min-width: 768px) {
+    /* FOOTER TOP */
+    #footer-top .col-4 {
+        margin: auto;
+    }
+
+    #footer-top span {
+        font-size: 1.5rem;
+    }
+    /* FOOTER-DETAILS */
+    #contatos-footer, #link-site {
+        margin: 0px 0px 10px 0px;
+        border-left: 1px solid #FFF;
+    }
+ }
